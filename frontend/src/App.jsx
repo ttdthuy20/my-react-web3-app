@@ -198,7 +198,7 @@ const ShopShowcase = () => {
           </button> */}
             <Link to="/shop"
             className="inline-flex items-center space-x-2 text-indigo-600 font-bold hover:text-indigo-800 transition">
-            <span>Xem tất cả >></span>
+            <span>Xem tất cả</span>
             </Link>
         </div>
       </div>
@@ -246,7 +246,7 @@ const NFTShowcase = () => {
         <div className="text-center mt-12">
           <Link to="/nft"
             className="inline-flex items-center space-x-2 text-indigo-600 font-bold hover:text-indigo-800 transition">
-            <span>Xem tất cả >></span>
+            <span>Xem tất cả</span>
           </Link>
 
           {/* <button className="inline-flex items-center space-x-2 text-indigo-600 font-bold hover:text-indigo-800 transition" onClick={() => navigate('/nft')}>
