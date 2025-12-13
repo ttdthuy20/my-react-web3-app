@@ -5,6 +5,7 @@ import { FaWallet, FaStore, FaUsers, FaDragon, FaPhoneAlt, FaEnvelope, FaMapMark
 import { GiMountains } from 'react-icons/gi';
 import { BiSupport } from 'react-icons/bi';
 import RegisterForm from './components/RegisterForm'; // Dùng tệp mới
+import Register from './components/Register'; // Đăng ký thành viên
 import Shop from './components/Shop'; // danh sách cửa hàng thành viên
 import NFT from './components/NFT'; // bộ sưu tập NFT
 import Dashboard from './components/Dashboard'; // Dashboard
@@ -21,10 +22,11 @@ const Navbar = ({ isConnected, connectWallet }) => {
         <div className="flex items-center space-x-2">
            <Link to="/">
            <FaDragon className="text-yellow-400 text-3xl" /></Link>
-          <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">
-            TNT Loyalty Chain
-          </span>
            
+          <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">
+             <Link to="/">TNT Loyalty Chain </Link>
+          </span>
+          
         </div>
         
         <div className="hidden md:flex space-x-6 font-medium">
@@ -367,7 +369,8 @@ function App() {
           />
 
           {/* ------- Trang Register ------- */}
-          <Route path="/register" element={<RegisterForm />} />
+          <Route path="/register" element={<Register />} />
+           <Route path="/registerForm" element={<RegisterForm />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/NFT" element={<NFT />} /> 
           <Route path="/Dashboard" element={<Dashboard />} /> 
